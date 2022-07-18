@@ -1,0 +1,291 @@
+hr{
+    color: black;
+    margin: 4 !important;
+}
+
+
+#content{
+    display: flex;
+    justify-content: center;
+}
+
+.div-robot{
+    width: 210px;
+    
+    
+}
+.div-robot-head{
+    display: flex;
+    align-items: center;
+}
+
+.div-robot-head .orelha-esquerda{
+    /* background-color: #254d72; */
+    background-color: silver;
+    width: 10px;
+    height: 40px;
+}
+
+.div-robot-head .cabeca{
+    width: 180px;
+    height: 130px;
+    /* background-color: #a8c1df; */
+    background-color: #cdcdcd;
+    border-radius: 3px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div-robot-head .cabeca .display{
+    width: 60%;
+    height: 70%;
+    border-radius: 3px;
+    background-color: rgb(0, 0, 0);
+}
+
+.div-robot-head .cabeca .display .grid{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 3px;
+    grid-row-gap: 3px;   
+}
+
+.span-grid{
+    
+    background-color: rgb(255, 255, 255);
+    border-radius: 60%;
+    cursor: pointer;
+    opacity: 20%;
+}
+.span-grid.active{
+    
+    background-color: red;
+    border-radius: 60%;
+    border: 1px solid red;
+    cursor: pointer;
+    opacity: 100%;
+}
+
+
+.div-robot-head .comunicador{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.div-robot-head .comunicador .box1{
+    /* background-color: #254d72; */
+    background-color: silver;
+    width: 10px;
+    height: 40px;
+}
+
+.div-robot-head .comunicador .antena{
+    display: flex;
+    align-items: center;
+    
+}
+
+.div-robot-head .comunicador .antena .box2{
+    /* background-color: #43729f; */
+    background-color: #8d8d8d;
+    width: 5px;
+    height: 20px;
+}
+.div-robot-head .comunicador .antena .box3{
+    background-color: rgb(114, 105, 107);
+    width: 5px;
+    height: 60px;
+    position: relative;
+    bottom: 20px;
+    border-radius: 3px 3px 0 0;
+}
+
+
+/* Corpo Robo */
+.div-robot-body{
+    display: flex;
+    margin: 0 10px;
+    justify-content: center;
+}
+
+.div-robot-body .braco-esquerdo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-robot-body .braco-esquerdo .ombro-esquerdo{
+    width: 30px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 6px 0px 0px 6px;
+    border-right: 2px solid #808080 ;
+    /* background-color: rgb(67 114 159); */
+    background-color: silver;
+}
+.div-robot-body .braco-esquerdo .pulso{
+    width: 15px;
+    height: 35px;
+    background-color:rgb(167 167 167);
+}
+.div-robot-body .braco-esquerdo .mao{
+    width: 20px;
+    height: 15px;
+    border-radius: 25%;
+    /* background-color: #254d72; */
+    background-color: #4a4a4a;
+}
+
+
+.div-robot-body .pescoco{
+    width: 120px;
+    height: 10px;
+    background-color: rgb(167 167 167);
+}
+.div-robot-body .corpo{
+    width: 120px;
+    height: 120px;
+    /* background-color: #a8c1df; */
+    background-color: #cdcdcd;
+    border-radius: 3px;
+    border-top: 1px solid #808080;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.div-robot-body .superior{
+    height: 60%;
+    width: 100%;
+}
+.div-robot-body .inferior{
+    height: 40%;
+    width: 100%;
+    /* border-top: 1px solid black; */
+    display: flex;
+    /* background-color: antiquewhite; */
+}
+
+
+
+.div-robot-body .braco-direito{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.div-robot-body .braco-direito .ombro-direito{
+    width: 30px;
+    height: 35px;
+    margin-top: 10px;
+    border-radius: 0px 6px 6px 0px;
+    border-left: 2px solid #808080;
+    /* background-color: rgb(67 114 159); */
+    background-color: silver;
+}
+.div-robot-body .braco-direito .pulso{
+    width: 15px;
+    height: 35px;
+    background-color:rgb(167 167 167);
+}
+.div-robot-body .braco-direito .mao{
+    width: 20px;
+    height: 15px;
+    border-radius: 25%;
+    /* background-color: #254d72; */
+    background-color: #4a4a4a;
+}
+
+.div-robot-foot .box1-foot{
+    display: flex;
+    
+    justify-content: space-between;
+    margin: 0 50px 0 50px;
+    
+    
+}
+
+.div-robot-foot .perna-esquerda{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-robot-foot .perna-esquerda .perna{
+    width: 20px;
+    height: 40px;
+    background-color: rgb(167 167 167);
+}
+.div-robot-foot .perna-esquerda .pe{
+    width: 40px;
+    height: 20px;
+    border-radius: 3px;
+    /* background-color: #254d72; */
+    background-color: #4a4a4a;
+    box-shadow: 0px 1px 1px rgb(88, 87, 87);
+}
+
+.div-robot-foot .perna-direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-robot-foot .perna-direita .perna{
+    width: 20px;
+    height: 40px;
+    background-color: rgb(167 167 167);
+}
+.div-robot-foot .perna-direita .pe{
+    width: 40px;
+    height: 20px;
+    border-radius: 3px;
+    /* background-color: #254d72; */
+    background-color: #4a4a4a;
+    box-shadow: 0px 1px 1px rgb(88, 87, 87);
+    
+}
+
+
+
+.tank{
+    position:relative;
+    margin:-1px 15px;
+    z-index: -1;
+}
+
+.tank .middle{
+    width:180px;
+    height:40px;
+    background-color:#cdcdcd;
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tank .top{
+    width: 180px;
+    height: 5px;
+    background-color:#9f9f9f;
+    -moz-border-radius: 130px / 25px;
+    -webkit-border-radius: 130px / 25px;
+    border-radius: 130px / 25px;
+    position:absolute;
+    top:-3px;
+}
+
+.tank .bottom{
+    width: 180px;
+    height: 50px;
+    background-color:#cdcdcd;
+    -moz-border-radius: 290px / 25px;
+    -webkit-border-radius: 290px / 25px;
+    border-radius: 290px / 25px;
+    position:absolute;
+    top:10px;
+    box-shadow:0px 2px 1px rgb(114 114 114 / 75%);
+}
