@@ -77,6 +77,18 @@ class Robot:
             break
         
         self.draw_robot(desenho_normal)
+    
+    def get_draw(self,name:str) -> list:
+        """
+        Get coordinates of face
+
+        Args:
+            name (str): name of face
+        
+        Returns:
+            List with coordinates
+        """
+        return faces_dict[name]
 
 
 

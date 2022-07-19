@@ -2,6 +2,10 @@ from .bocas import *
 from .olhos import *
 
 
+faces_dict = {
+    'desenho_feliz':desenho_olhar_curvado + desenho_boca_feliz
+}
+
 
 desenho_feliz = desenho_olhar_curvado + desenho_boca_feliz
 desenho_feliz_quadrado = desenho_olhar_quadrado + desenho_boca_feliz
@@ -10,7 +14,7 @@ desenho_feliz_esquerda = desenho_olhar_esquerda+ desenho_boca_feliz
 desenho_feliz_direita = desenho_olhar_direita + desenho_boca_feliz
 
 desenho_triste = desenho_olhar_curvado + desenho_boca_triste
-desenho_triste_quadrado = desenho_olhar_quadrado + desenho_boca_triste 
+desenho_triste_quadrado = desenho_olhar_quadrado + desenho_boca_triste
 
 desenho_normal = desenho_olhar_quadrado + desenho_boca_reta
 
