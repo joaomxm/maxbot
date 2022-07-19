@@ -26,7 +26,7 @@ class Robot:
         Returns:
             None
         """
-
+        self.device.clear()
         while True:
             with canvas(self.virtual) as draw:
                 draw.point(face,fill='red')

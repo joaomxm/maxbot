@@ -2,8 +2,28 @@ from .bocas import *
 from .olhos import *
 
 
+desenho_interregacao = [
+    (2,0),(3,0),(4,0),(5,0),
+    (1,1),(2,1),(3,1),(4,1),(5,1),(6,1),
+    (1,2),(2,2),(5,2),(6,2),
+    (5,3),(6,3),
+    (4,4),(5,4),
+    (3,5),(4,5),
+    (3,7),(4,7)
+]
+
+desenho_default = [
+    (1,3),(2,3),(5,3),(6,3),
+    (1,4),(2,4),(5,4),(6,4),
+]
+
 faces_dict = {
-    'desenho_feliz':desenho_olhar_curvado + desenho_boca_feliz
+    'feliz':desenho_olhar_quadrado + desenho_boca_feliz,
+    'triste':desenho_olhar_quadrado + desenho_boca_triste,
+    'default':desenho_default,
+
+    'interrogacao':desenho_interregacao,
+
 }
 
 
@@ -54,6 +74,8 @@ desenho_piscada_esquerda_movimento = [desenho_normal , desenho_piscada_esquerda]
 
 desenho_piscada_direita = desenho_olhar_piscada_direita + desenho_boca_lateral_direita
 desenho_piscada_direita_movimento = [desenho_normal , desenho_piscada_direita]
+
+
 
 
 desenho_drip = [

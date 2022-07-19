@@ -7,7 +7,7 @@ PATH_SCRIPT_ACTIONS = os.getenv("PATH_SCRIPT_ACTIONS")
 
 nome_acao = {'nome':None}
 processos = []
-faces = ['feliz','triste','default']
+faces = ['feliz','triste','livre','p-esquerda','p-direita-direita','default']
 
 def executar(acao:str):
     """
@@ -29,13 +29,16 @@ def executar(acao:str):
         limpar_processos()
         print('Processo excluido!')
 
-        if acao not in faces: return
+        if acao not in faces: 
+            robo.clean()
+            return robo.get_draw('interrogacao')
 
         processo = subprocess.Popen(["python3",PATH_SCRIPT_ACTIONS,acao])
         processos.append(processo)
         nome_acao['nome'] = acao
         print(f'Novo processo: {acao}')
 
+        return robo.get_draw(acao)
         
         
     

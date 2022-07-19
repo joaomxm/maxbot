@@ -5,7 +5,9 @@ from Faces import (
     desenho_triste_quadrado,
     desenho_falando,
     desenho_distraido,
-    desenho_normal
+    desenho_normal,
+    desenho_triste,
+    desenho_default
 )
 
 if __name__ == '__main__':
@@ -31,7 +33,11 @@ if __name__ == '__main__':
     elif param == 'p-direita':
         robo = Robot()
         robo.piscar_olho('1',desenho_normal)
-
+    
     elif param == 'default':
+        robo = Robot()
+        robo.draw_robot(desenho_default)
+
+    elif param == 'falando':
         robo = Robot()
         robo.draw_robot_multiple(desenho_falando)
